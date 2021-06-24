@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE/{{.UName}}</title>
+    <link rel="stylesheet" href="static/profile/profile.css" />
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div style="float: right;margin:20px;">
+                <a href="/logout"><button style="background: rgb(67, 115, 247);">logout</button></a>
+            </div>
+            <div class="first">
+                <div class="profilehead">
+                    <h4> PROFILE</h4>
+                </div>
+                <div class="profileDp">
+                    <img style="width: 200px;height: 200px;" src="{{.image}}" alt=" Profile Image ">
+                </div>
+                <div style="float: left;margin-top:200px">
+                    <a href="/updateImg"><button style="background: rgb(233, 234, 240);">img</button></a>
+                </div>
+                <div class="profile_name ">
+                    <h1> {{.FName}} {{.LName}}</h1><br>
+                </div>
+            </div>
+            <div style="width: 300px; height:50px; float:left; background:rgb(100, 236, 230); margin:50px ">
+                <h2>hii {{.FName}} {{.LName}} welcome !</h2><br>
+                <a action=" " method="post "> Edit bio.</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

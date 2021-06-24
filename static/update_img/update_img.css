@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(107, 128, 247);
+}
+
+.top_section {
+    margin: 10px;
+    width: auto;
+    height: 150px;
+}
